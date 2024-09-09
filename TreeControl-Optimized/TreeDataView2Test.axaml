@@ -1,0 +1,22 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="using:AS_Desktop2.UserControls"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AS_Desktop2.UserControls.TreeDataView2Test">
+	<local:TreeDataView2 Name="TreeDataView2Control">
+		<local:TreeDataView2.Columns>
+			<local:TreeDataView2ExpanderColumn Header="Expander"
+											   ColumnWidth="2.5*"
+											   Binding="{Binding Text}"
+											   IsExpanded="{Binding expanded}"
+											   InnerItemsSource="{Binding items}" />
+			<local:TreeDataView2TextColumn Header="Description"
+										   Binding="{Binding Desc}" />
+			
+		</local:TreeDataView2.Columns>
+	</local:TreeDataView2>
+
+	<!-- ItemsSource="{Binding Items}" -->
+</UserControl>
