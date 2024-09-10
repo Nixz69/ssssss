@@ -1,0 +1,62 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassName
+build_property.AvaloniaNameGeneratorAttachDevTools = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyAvaloniaApp
+build_property.ProjectDir = C:\Users\maksi\MyAvaloniaApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[c:/Users/maksi/MyAvaloniaApp/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/Interface_2.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/Cells/TreeDataView2ExpanderCell.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/Cells/TreeDataView2TextBoxCell.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/Cells/TreeDataView2TextCell.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/Columns/TreeDataView2Column.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/Columns/TreeDataView2ExpanderColumn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/Columns/TreeDataView2TextBoxColumn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/Columns/TreeDataView2TextColumn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/TreeDataView2.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/TreeDataView2ItemsPresenter.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/TreeDataView2Row.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[c:/Users/maksi/MyAvaloniaApp/TreeControl-Optimized/TreeDataView2Test.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

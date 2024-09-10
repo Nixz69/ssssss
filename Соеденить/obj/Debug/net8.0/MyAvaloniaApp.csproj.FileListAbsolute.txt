@@ -1,0 +1,219 @@
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.exe
+C:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.deps.json
+C:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.runtimeconfig.json
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.pdb
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Base.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.DesignerSupport.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Dialogs.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Markup.Xaml.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Markup.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Metal.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.MicroCom.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.OpenGL.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Vulkan.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.ColorPicker.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.DataGrid.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Desktop.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Diagnostics.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Fonts.Inter.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.FreeDesktop.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Native.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Remote.Protocol.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Skia.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Themes.Fluent.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Themes.Simple.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Win32.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.X11.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\HarfBuzzSharp.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\MicroCom.Runtime.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\SkiaSharp.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\System.IO.Pipelines.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Tmds.DBus.Protocol.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-arm64\native\av_libglesv2.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x64\native\av_libglesv2.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x86\native\av_libglesv2.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\osx\native\libAvaloniaNative.dylib
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm\native\libHarfBuzzSharp.so
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm64\native\libHarfBuzzSharp.so
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-x64\native\libHarfBuzzSharp.so
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm\native\libSkiaSharp.so
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm64\native\libSkiaSharp.so
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libSkiaSharp.so
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-x64\native\libSkiaSharp.so
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll
+c:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.csproj.AssemblyReference.cache
+c:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
+c:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\resources
+c:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.AssemblyInfoInputs.cache
+c:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.AssemblyInfo.cs
+c:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.csproj.CoreCompileInputs.cache
+c:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\MyAvaloniaApp.dll
+c:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\MyAvaloniaApp.pdb
+c:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\refint\Avalonia\MyAvaloniaApp.dll
+C:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\MyAvalon.9DF80BA1.Up2Date
+C:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.genruntimeconfig.cache
+C:\Users\maksi\MyAvaloniaApp\obj\Debug\net8.0\ref\MyAvaloniaApp.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.ItemsRepeater.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.ReactiveUI.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\DynamicData.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\ReactiveUI.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\Splat.dll
+c:\Users\maksi\MyAvaloniaApp\bin\Debug\net8.0\System.Reactive.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.exe
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.deps.json
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.runtimeconfig.json
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.pdb
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Base.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.DesignerSupport.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Dialogs.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Markup.Xaml.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Markup.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Metal.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.MicroCom.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.OpenGL.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Vulkan.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.ColorPicker.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.DataGrid.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.ItemsRepeater.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Desktop.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Diagnostics.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Fonts.Inter.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.FreeDesktop.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Native.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.ReactiveUI.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Remote.Protocol.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Skia.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Themes.Fluent.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Themes.Simple.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Win32.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.X11.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\DynamicData.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\HarfBuzzSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\MicroCom.Runtime.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\ReactiveUI.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\SkiaSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Splat.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\System.Reactive.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\Tmds.DBus.Protocol.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-arm64\native\av_libglesv2.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x64\native\av_libglesv2.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x86\native\av_libglesv2.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\osx\native\libAvaloniaNative.dylib
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm\native\libHarfBuzzSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm64\native\libHarfBuzzSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-x64\native\libHarfBuzzSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm\native\libSkiaSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm64\native\libSkiaSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libSkiaSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-x64\native\libSkiaSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.csproj.AssemblyReference.cache
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\resources
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.AssemblyInfoInputs.cache
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.AssemblyInfo.cs
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.csproj.CoreCompileInputs.cache
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\MyAvaloniaApp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\MyAvaloniaApp.pdb
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\refint\Avalonia\MyAvaloniaApp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\MyAvalon.9DF80BA1.Up2Date
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.genruntimeconfig.cache
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ\MyAvaloniaApp\obj\Debug\net8.0\ref\MyAvaloniaApp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.csproj.AssemblyReference.cache
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\resources
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.AssemblyInfoInputs.cache
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.AssemblyInfo.cs
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.csproj.CoreCompileInputs.cache
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.exe
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.deps.json
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.runtimeconfig.json
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\MyAvaloniaApp.pdb
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Base.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.DesignerSupport.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Dialogs.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Markup.Xaml.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Markup.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Metal.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.MicroCom.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.OpenGL.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Vulkan.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.ColorPicker.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.DataGrid.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Controls.ItemsRepeater.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Desktop.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Diagnostics.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Fonts.Inter.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.FreeDesktop.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Native.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.ReactiveUI.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Remote.Protocol.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Skia.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Themes.Fluent.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Themes.Simple.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.Win32.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Avalonia.X11.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\DynamicData.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\HarfBuzzSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\MicroCom.Runtime.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\ReactiveUI.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\SkiaSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Splat.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\System.Reactive.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\Tmds.DBus.Protocol.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-arm64\native\av_libglesv2.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x64\native\av_libglesv2.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x86\native\av_libglesv2.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\osx\native\libAvaloniaNative.dylib
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm\native\libHarfBuzzSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm64\native\libHarfBuzzSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libHarfBuzzSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-x64\native\libHarfBuzzSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm\native\libSkiaSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-arm64\native\libSkiaSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-musl-x64\native\libSkiaSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\linux-x64\native\libSkiaSharp.so
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\MyAvaloniaApp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\Avalonia\MyAvaloniaApp.pdb
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\refint\Avalonia\MyAvaloniaApp.dll
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\MyAvalon.9DF80BA1.Up2Date
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\MyAvaloniaApp.genruntimeconfig.cache
+C:\Users\dimat\Desktop\Death Note\инфа\Практика\3 курс\прога\Славянский способ 2\MyAvaloniaApp\obj\Debug\net8.0\ref\MyAvaloniaApp.dll

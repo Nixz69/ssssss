@@ -1,0 +1,821 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="using:MyAvaloniaApp"
+        xmlns:uc="using:AS_Desktop2.UserControls"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
+        x:Class="MyAvaloniaApp.MainWindow"
+        
+        WindowState="Maximized"
+        Title="Составление плана">
+
+        <!--ШРИФТ Proxima Nova -->
+        <Window.Styles>
+                <Style Selector="TextBlock">
+                        <Setter Property="FontFamily" Value="Proxima Nova"/>
+                </Style>
+                <Style Selector="Button">
+                        <Setter Property="FontFamily" Value="Proxima Nova"/>
+                </Style>
+                <Style Selector="ComboBox">
+                        <Setter Property="FontFamily" Value="Proxima Nova"/>
+                </Style>
+                <Style Selector="CheckBox">
+                        <Setter Property="FontFamily" Value="Proxima Nova"/>
+                </Style>
+                <Style Selector="TextBox">
+                        <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+
+                <Style Selector="Border#PART_BorderHeaders">
+                        <Setter Property="Background" Value="#F1F5F9"/>
+                        <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+        </Window.Styles>
+
+
+        <StackPanel >
+
+                <!-- ШАПКА ИНТЕРФЕЙСА --> 
+                <Border Background="#004C97"  > 
+                        <StackPanel Orientation="Horizontal" Width="1920" Height="80" VerticalAlignment="Center"    >
+                                <Image Source="file:///C:\Users\maksi\MyAvaloniaApp\logo.png" Margin="59 30 0 15" />
+                                <StackPanel Margin="1500 16 0 0" >
+                                        <TextBlock Text="Иванов И. И." Foreground="White" FontSize="22"/>
+                                        <TextBlock Text="Куратор" Foreground="White" FontSize="14"/>
+                                </StackPanel>
+                        </StackPanel>
+                </Border>
+
+                <!-- БОКОВАЯ ПАНЕЛЬ СЛЕВА -->
+                <Grid Background="White">                        
+                        <!-- Боковая панель СЛЕВА -->
+                        <StackPanel HorizontalAlignment="Left">
+                                <Border>
+                                        <!-- ГРАДИЕНТНАЯ ЗАЛИВКА ЛЕВОЙ ПАНЕЛИ -->
+                                        <Grid Width="360" Height="1000" HorizontalAlignment="Left" >
+                                                <Grid.Background>
+                                                        <LinearGradientBrush StartPoint="0%,0%" EndPoint="-40%,80%">
+                                                                <GradientStop Offset="0.0" Color="#004C97"/>   <!-- Верхний цвет -->
+                                                                <GradientStop Offset="0.5" Color="#235382"/>
+                                                                <GradientStop Offset="1.0" Color="#4B7E6E" />   <!-- Нижний цвет -->
+                                                        </LinearGradientBrush>
+                                                </Grid.Background>
+
+                                                
+                                                        <!-- <local:Interface_2 /> --> 
+                                                
+
+                                                <StackPanel HorizontalAlignment="Left" Margin="0 15 0 0" >
+                                                        <StackPanel.Styles> 
+                                                                <Style Selector="Button[IsPointerOver=True] > AccessText"> 
+                                                                        <Setter Property="Foreground" Value="White" /> 
+                                                                </Style> 
+
+                                                        </StackPanel.Styles>
+
+                                                        <Button Click="btn1" Padding="59 0 0 0" Content="Составление плана" Background="Transparent" Foreground="White" FontSize="22" Width="360" Height="50" VerticalContentAlignment="Center"/>
+                                                        <Button Click="btn2" Padding="59 0 0 0" Margin="0 0 0 0" Height="50" Content="Контроль" Background="Transparent" Foreground="White" FontSize="22" Width="360" VerticalContentAlignment="Center"/>
+
+                                                        <TreeView Margin="0 0 0 0" Background="Transparent" Foreground="White" FontSize="22"  >
+                                                                <TreeViewItem Header="Отчет" Foreground="White" Padding="23 12 0 12" >
+                                                                        <TreeViewItem Header="Отчет по процессам" Foreground="White" PointerPressed="btn3" Padding="15 0 0 0"/>
+                                                                        <TreeViewItem Header="Отчет по контрагентам" Foreground="White" PointerPressed="btn4" Padding="15 0 0 0"/>
+                                                                        <TreeViewItem Header="Отчет по контролю" Foreground="White" PointerPressed="btn5" Padding="15 0 0 0"/>
+                                                                </TreeViewItem>
+                                                        </TreeView>
+
+                                                        <Button Margin="0 0 0 0" Padding="59 0 0 0" Height="50" Content="Настройка" Background="Transparent" Foreground="White" FontSize="22" Width="360" VerticalContentAlignment="Center" Click="btn6"/>
+                                                        
+                                                        <TreeView Margin="0 10 0 0" Background="Transparent" Foreground="White" FontSize="22">
+                                                                <TreeViewItem Header="НСИ" Foreground="White" Padding="23 12 0 12">
+                                                                        <TreeViewItem Header="Подразделение" Foreground="White" Padding="15 0 0 0" />
+                                                                        <TreeViewItem Header="Контрагенты" Foreground="White" Padding="15 0 0 0"/>
+                                                                        <TreeViewItem Header="Справочники" Foreground="White" Padding="15 0 0 0"/>
+                                                                </TreeViewItem>
+                                                        </TreeView>
+                                                </StackPanel>
+
+                                                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="36 0 65 50" Foreground="White" FontSize="14">
+                                                        <Run Text="Единая служба поддержки сервисов тел"/>
+                                                        <LineBreak/>
+                                                        <Run Text="тел. 8 (800) 700-59-11"/>
+                                                        <LineBreak/>
+                                                        <Run Text="5911@nornik.ru"/>
+                                                </TextBlock>
+                                        </Grid>
+                                </Border>
+                                
+                        </StackPanel>
+
+
+                        <!-- ЦЕНТРАЛЬНАЯ ПАНЕЛЬ  -->
+                        <Grid Name="Plan" IsVisible="False" Background="#F1F5F9" Width="1560" HorizontalAlignment="Right" > 
+                                <Border CornerRadius="10" Background="White" Width="1550" Height="980" HorizontalAlignment="Right">
+
+                                        <!-- КОД ОТ СОСТАВЛЕНИЯ ПЛАНА -->
+                                        <StackPanel>
+                                                <TextBlock Text="Составление плана" FontSize="26" FontWeight="Bold" Margin="50 20 0 0"/>
+
+                                                <StackPanel Orientation="Horizontal" >
+
+                                                        <StackPanel Margin="50 20 0 0">
+                                                                <TextBlock Text="Выбор плана:" FontSize="14" />
+                                                                <ComboBox x:Name="planComboBox" Width="400" Height="30" Margin="0 0 0 0" PlaceholderText="Выбор плана" FontSize="14" CornerRadius="5"  >
+                                                                        <ComboBoxItem Name="tekyshiy_plan">Текущий план</ComboBoxItem>
+                                                                        <ComboBoxItem Name="budget_plan">Бюджетный план</ComboBoxItem>
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel >
+                                                                <TextBlock Text="Ресурсы:" Margin="20 20 0 0" FontSize="14"/>
+                                                                <ComboBox x:Name="resourceComboBox" Width="400" Height="30" Margin="20 0 0 0" PlaceholderText="Ресурс"  FontSize="14" CornerRadius="5"  >
+                                                                        <ComboBoxItem Name="obshiy_Resource" >Ресурс 1</ComboBoxItem>
+                                                                        <ComboBoxItem>Ресурс 2</ComboBoxItem>
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel>
+                                                                <TextBlock Text="Контрагент:" Margin="20 20 0 0" FontSize="14"/>
+                                                                <ComboBox x:Name="contraAgentComboBox" Width="400" Height="30" Margin="20 0 0 0" PlaceholderText="Контрагент" FontSize="14" CornerRadius="5" >
+                                                                        <ComboBoxItem Name="NMZ_Par" >Контрагент 1</ComboBoxItem>
+                                                                        <ComboBoxItem>Контрагент 2</ComboBoxItem>
+                                                                        <ComboBoxItem>Контрагент 3</ComboBoxItem>
+                                                                        <ComboBoxItem>Контрагент 4</ComboBoxItem>
+                                                                        <ComboBoxItem>Контрагент 5</ComboBoxItem>
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        
+                                                        <Button Click="Prim" Width="150" Height="30" Margin="10 35 0 0" Background="#004C97" Foreground="White" Content="Применить" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14"/>
+                                                        
+                                                </StackPanel>
+
+                                                <TextBlock Margin="50 20 0 20" Text="План" FontWeight="Bold" FontSize="20" >
+                                                        <Border BorderThickness="0 0 0 1" BorderBrush="#CED4DA" Width="1400" Margin="11 0 0 11"  />
+                                                </TextBlock>                                        
+                                                
+                                                <Grid Name="Gornorud" IsVisible="false">   
+                                                        <StackPanel Width="1500">
+                                                                
+
+                                                                <uc:TreeDataView2 Name="treeDataView2">
+                                                                        <uc:TreeDataView2.Columns >
+                                                                                <uc:TreeDataView2ExpanderColumn Header="Подразделение" FontSize="16" 
+                                                                                                                FontWeight="Bold" 
+                                                                                                                Height="56" 
+                                                                                                                Margin="20 0 0 0"
+                                                                                                                Binding="{Binding name}" 
+                                                                                                                IsExpanded="{Binding IsExpanded, Mode=TwoWay}"
+                                                                                                                InnerItemsSource="{Binding items}"
+                                                                                                                ColumnWidth="5*"/>
+                                                                                <!--КВАРТАЛЫ И МЕСЯЦА -->                                
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="янв"
+                                                                                                                Binding="{Binding jan}" 
+                                                                                                                IsVisible="{Binding #BKW1.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="фев"
+                                                                                                                Binding="{Binding feb}" 
+                                                                                                                IsVisible="{Binding #BKW1.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="мар"
+                                                                                                                Binding="{Binding mar}" 
+                                                                                                                IsVisible="{Binding #BKW1.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                                                <uc:TreeDataView2TextColumn Header="Kw1"
+                                                                                                                                            Binding="{Binding kw1}"
+                                                                                                                                            ColumnWidth="*"> 
+                                                                                                                                                <StackPanel Orientation="Horizontal">
+                                                                                                                                                        <TextBlock Text="I кв." 
+                                                                                                                                                                   VerticalAlignment="Center"/>                            
+                                                                                                                                                        <ToggleButton Name="BKW1" IsChecked="false" Click="BKW1_Click" Background="Transparent">
+                                                                                                                                                                <Image  Name="Arrow_1" 
+                                                                                                                                                                        Source="file:///C:\Users\maksi\MyAvaloniaApp\Com_down.png" 
+                                                                                                                                                                        
+                                                                                                                                                                        Height="15"
+                                                                                                                                                                        Width="15" 
+                                                                                                                                                                        HorizontalAlignment="Center" 
+                                                                                                                                                                        VerticalAlignment="Center"
+                                                                                                                                                                        RenderTransformOrigin="0.5,0.5">
+                                                                                                                                                                        <Image.RenderTransform>
+                                                                                                                                                                                <RotateTransform Angle="0"/>
+                                                                                                                                                                        </Image.RenderTransform>
+                                                                                                                                                                
+                                                                                                                                                                </Image>
+                                                                                                                                                        </ToggleButton>
+                                                                                                                                                </StackPanel>
+                                                                                                                </uc:TreeDataView2TextColumn>
+                                                                                                                
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="апр"
+                                                                                                                Binding="{Binding apr}" 
+                                                                                                                IsVisible="{Binding #BKW2.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="май"
+                                                                                                                Binding="{Binding may}" 
+                                                                                                                IsVisible="{Binding #BKW2.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="июл"
+                                                                                                                Binding="{Binding jun}" 
+                                                                                                                IsVisible="{Binding #BKW2.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                                                <uc:TreeDataView2TextColumn Header="Kw2"
+                                                                                                                                            Binding="{Binding kw2}" 
+                                                                                                                                            ColumnWidth="*">
+                                                                                                                                                <StackPanel Orientation="Horizontal">
+                                                                                                                                                        <TextBlock Text="II кв."
+                                                                                                                                                                   VerticalAlignment="Center"/>                            
+                                                                                                                                                        <ToggleButton Name="BKW2" IsChecked="false" Click="BKW2_Click" Background="Transparent">
+                                                                                                                                                                <Image  Name="Arrow_2" 
+                                                                                                                                                                        Source="file:///C:\Users\maksi\MyAvaloniaApp\Com_down.png" 
+                                                                                                                                                                        
+                                                                                                                                                                        Height="15"
+                                                                                                                                                                        Width="15" 
+                                                                                                                                                                        HorizontalAlignment="Center" 
+                                                                                                                                                                        VerticalAlignment="Center"
+                                                                                                                                                                        RenderTransformOrigin="0.5,0.5">
+                                                                                                                                                                        <Image.RenderTransform>
+                                                                                                                                                                                <RotateTransform Angle="0"/>
+                                                                                                                                                                        </Image.RenderTransform>
+                                                                                                                                                                
+                                                                                                                                                                </Image>
+                                                                                                                                                        </ToggleButton>
+                                                                                                                                                </StackPanel>
+                                                                                                                </uc:TreeDataView2TextColumn>
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="июн"
+                                                                                                                Binding="{Binding jul}" 
+                                                                                                                IsVisible="{Binding #BKW3.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="авг"
+                                                                                                                Binding="{Binding aug}" 
+                                                                                                                IsVisible="{Binding #BKW3.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="сен"
+                                                                                                                Binding="{Binding sep}" 
+                                                                                                                IsVisible="{Binding #BKW3.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                                                <uc:TreeDataView2TextColumn Header="Kw3"
+                                                                                                                                            Binding="{Binding kw3}" 
+                                                                                                                                            ColumnWidth="*">
+                                                                                                                                                <StackPanel Orientation="Horizontal">
+                                                                                                                                                        <TextBlock Text="III кв."
+                                                                                                                                                                   VerticalAlignment="Center"/>                            
+                                                                                                                                                        <ToggleButton Name="BKW3" IsChecked="false" Click="BKW3_Click" Background="Transparent">
+                                                                                                                                                                <Image  Name="Arrow_3" 
+                                                                                                                                                                        Source="file:///C:\Users\maksi\MyAvaloniaApp\Com_down.png" 
+                                                                                                                                                                        
+                                                                                                                                                                        Height="15"
+                                                                                                                                                                        Width="15" 
+                                                                                                                                                                        HorizontalAlignment="Center" 
+                                                                                                                                                                        VerticalAlignment="Center"
+                                                                                                                                                                        RenderTransformOrigin="0.5,0.5">
+                                                                                                                                                                        <Image.RenderTransform>
+                                                                                                                                                                                <RotateTransform Angle="0"/>
+                                                                                                                                                                        </Image.RenderTransform>
+                                                                                                                                                                
+                                                                                                                                                                </Image>
+                                                                                                                                                        </ToggleButton> 
+                                                                                                                                                </StackPanel>
+                                                                                                                </uc:TreeDataView2TextColumn>
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="окт"
+                                                                                                                Binding="{Binding oct}" 
+                                                                                                                IsVisible="{Binding #BKW4.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="ноя"
+                                                                                                                Binding="{Binding nov}" 
+                                                                                                                IsVisible="{Binding #BKW4.IsChecked}"
+                                                                                                                ColumnWidth="*"/>
+                                                                                <uc:TreeDataView2TextBoxColumn  Header="дек"
+                                                                                                                Binding="{Binding dec}" 
+                                                                                                                IsVisible="{Binding #BKW4.IsChecked}"
+                                                                                                                ColumnWidth="*"/>                                                                                                                     
+                                                                                                                <uc:TreeDataView2TextColumn Header="Kw4"
+                                                                                                                                            Binding="{Binding kw4}" 
+                                                                                                                                            ColumnWidth="*">
+                                                                                                                                                <StackPanel Orientation="Horizontal">
+                                                                                                                                                        <TextBlock Text="IV кв."
+                                                                                                                                                                   VerticalAlignment="Center"/>                            
+                                                                                                                                                        <ToggleButton Name="BKW4" IsChecked="false" Click="BKW4_Click" Background="Transparent">
+                                                                                                                                                                <Image  Name="Arrow_4" 
+                                                                                                                                                                        Source="file:///C:\Users\maksi\MyAvaloniaApp\Com_down.png" 
+                                                                                                                                                                        
+                                                                                                                                                                        Height="15"
+                                                                                                                                                                        Width="15" 
+                                                                                                                                                                        HorizontalAlignment="Center" 
+                                                                                                                                                                        VerticalAlignment="Center"
+                                                                                                                                                                        RenderTransformOrigin="0.5,0.5">
+                                                                                                                                                                        <Image.RenderTransform>
+                                                                                                                                                                                <RotateTransform Angle="0"/>
+                                                                                                                                                                        </Image.RenderTransform>
+                                                                                                                                                                
+                                                                                                                                                                </Image>
+                                                                                                                                                        </ToggleButton>
+                                                                                                                                                </StackPanel>
+                                                                                                                </uc:TreeDataView2TextColumn>
+                                                                                <uc:TreeDataView2TextColumn Header="Год"
+                                                                                                            Binding="{Binding year}" 
+                                                                                                            ColumnWidth="*"/>
+                                                                        </uc:TreeDataView2.Columns>
+                                                                </uc:TreeDataView2>
+                                                                
+                                                        </StackPanel>
+                                                                        
+                                                </Grid>
+
+                                        </StackPanel>
+                                </Border>
+                        </Grid>
+
+                        <!-- КОД КОНТРОЛЯ -->
+                        <Grid Name="Contrl" IsVisible="False" Background="#F1F5F9" Width="1560" HorizontalAlignment="Right" > 
+                                <Border CornerRadius="10" Background="White" Width="1550" Height="980" HorizontalAlignment="Right" >
+                                        <!-- КОД ОТ Контроля -->
+                                        <StackPanel  >
+                                                <TextBlock Text="Контроль структурного подразделения" FontSize="26" FontWeight="Bold" Margin="50 20 0 0"/>
+
+                                                <StackPanel >
+                                                        <StackPanel Orientation="Horizontal" Margin="50 20 0 0">
+                                                                <StackPanel>
+                                                                        <TextBlock Text="Дата:"/>
+                                                                        <CalendarDatePicker x:Name="Calendar" Watermark="Выберите дату" Width="400" Height="30" CornerRadius="5" Foreground="#CACACA" BorderBrush="#CED4DA" FontSize="14"/>
+                                                                </StackPanel>
+
+                                                                <StackPanel Orientation="Horizontal" Margin="15 0 0 0">
+                                                                        <StackPanel>
+                                                                                <TextBlock Text="Подразделение:"  />
+
+                                                                                <ComboBox Width="400" Height="30" PlaceholderText="Наименование конкретного подразделения" CornerRadius="5" FontSize="14" Foreground="#CACACA" BorderBrush="#CED4DA">
+
+                                                                                        <ComboBoxItem Content="Подразделение 1"  />
+                                                                                        <ComboBoxItem Content="Подразделение 2" />
+                                                                                        <ComboBoxItem Content="Подразделение 3" />
+                                                                                        <ComboBoxItem Content="Подразделение 4" />
+
+                                                                                </ComboBox>
+                                                                        </StackPanel>
+                                                                        <Button Content="Применить" Padding="5" Width="150" Height="30" Margin="15 15 0 0" Background="#004C97" Foreground="White" HorizontalContentAlignment="Center"/>
+                                                                </StackPanel>
+                                                                
+                                                                
+                                                        </StackPanel>
+
+
+                                                        <!-- ВКЛАДКА С ЗАКРЫТИЕМ -->
+                                                        <StackPanel Margin="50 20 0 0">
+                                                                <TextBlock Text="Закрытие" FontWeight="Bold" FontSize="18" >
+                                                                        <Border BorderThickness="0 0 0 1" BorderBrush="#CED4DA" Width="1400" Margin="11 0 0 8"  />
+                                                                </TextBlock>
+                                                        </StackPanel>
+
+                                                        <StackPanel Orientation="Horizontal" Margin="0 15 0 0">
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Январь" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="50 0 0 0"/>
+                                                                        <CheckBox Margin="70 0 0 0" ></CheckBox>    
+                                                                </StackPanel>
+
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Апрель" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="250 0 0 0"/>
+                                                                        <CheckBox Margin="82 0 0 0"></CheckBox> 
+                                                                </StackPanel>
+
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Июль" Margin="230 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                                                                        <CheckBox Margin="91 0 0 0"></CheckBox> 
+                                                                </StackPanel>
+
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Октябрь" Margin="230 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                                                                        <CheckBox Margin="83 0 0 0"></CheckBox>
+                                                                </StackPanel >
+
+
+                                                        </StackPanel>
+
+                                                        
+                                                        <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+                                                                
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Февраль" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="50 0 0 0"/>
+                                                                        <CheckBox Margin="58 0 0 0" ></CheckBox>
+                                                                </StackPanel>
+
+                                                                <StackPanel Orientation="Horizontal">
+
+                                                                        <TextBlock Text="Май" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="250 0 0 0"/>
+                                                                        <CheckBox Margin="108 0 0 0"></CheckBox> 
+                                                                </StackPanel>
+                                                                
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Август" Margin="230 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                                                                        <CheckBox Margin="82 0 0 0"></CheckBox> 
+                                                                </StackPanel>
+
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Ноябрь" Margin="230 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                                                                        <CheckBox Margin="90 0 0 0"></CheckBox>       
+                                                                </StackPanel>
+                                                        </StackPanel>
+
+
+                                                        <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Март" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="50 0 0 0"/>
+                                                                        <CheckBox Margin="87 0 0 0" ></CheckBox>
+                                                                </StackPanel>
+
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Июнь" Margin="250 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                                                                        <CheckBox Margin="97 0 0 0"></CheckBox> 
+                                                                </StackPanel>
+
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Сентябрь" Margin="230 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                                                                        <CheckBox Margin="61 0 0 0"></CheckBox>
+                                                                </StackPanel>
+
+                                                                <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="Декабрь" Margin="230 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                                                                        <CheckBox Margin="82 0 0 0"></CheckBox>
+                                                                </StackPanel>
+
+                                                        </StackPanel>
+
+                                                        <StackPanel Orientation="Horizontal" Margin="50 20 0 0">
+                                                                <TextBlock Text="Контроль" FontWeight="Bold" Margin="0 0 0 15" FontSize="16" />
+                                                                        <Border BorderThickness="0 0 0 1" BorderBrush="#CED4DA" VerticalAlignment="Center" Width="1300" Margin="11 0 0 11"  />
+                                                                <TextBlock Text="Дата" FontWeight="Bold"  Margin="11 0 0 0" FontSize="16"/>
+                                                        </StackPanel>
+                                                        
+                                                        <StackPanel>
+                                                                <Border CornerRadius="5 5 0 0" Background="#F1F5F9" Width="1501" Height="56"  HorizontalAlignment="Center" >
+                                                                        <StackPanel Orientation="Horizontal" Margin="7 0 0 0">
+                                                                                <TextBlock Text="Подразделение" FontWeight="Bold" Margin="25 0 0 0" VerticalAlignment="Center" FontSize="16"/>
+                                                                                <TextBlock Text="Загрузка" FontWeight="Bold" Margin="600 00 0 0" VerticalAlignment="Center" FontSize="16"/>
+                                                                                <TextBlock Text="Отклонения" FontWeight="Bold" Margin="290 00 0 0" VerticalAlignment="Center" FontSize="16"/>
+                                                                        </StackPanel>
+                                                                </Border>
+                                                        </StackPanel>
+
+                                                        <!-- ИЕРАРАХИЯ -->
+                                                        <StackPanel>
+                                                                <StackPanel Margin="57 10 0 10">
+                                                                        <TextBlock Text="ЦГБ" FontSize="14" Height="33"/>
+                                                                        <Border BorderBrush="#F0F0F0" BorderThickness="0,0,0,1"/>
+                                                                </StackPanel>
+
+                                                                <StackPanel Margin="57 0 0 10">
+                                                                        <TextBlock Text="р. Комсомольский" FontSize="14" Height="33"/>
+                                                                        <Border BorderBrush="#F0F0F0" BorderThickness="0 0 0 1"/>
+                                                                </StackPanel>
+                                                                
+                                                                <StackPanel Margin="57 0 0 10">
+                                                                        <TextBlock Text="р. Маяк" FontSize="14" Height="33"/>
+                                                                        <Border BorderBrush="#F0F0F0" BorderThickness="0,0,0,1"/>
+                                                                </StackPanel>
+
+                                                                <StackPanel Margin="57 0 0 10">
+                                                                        <TextBlock Text="р. Октябрьский" FontSize="14" Height="33"/>
+                                                                        <Border BorderBrush="#F0F0F0" BorderThickness="0,0,0,1"/>
+                                                                </StackPanel>
+
+                                                                <StackPanel Margin="57 0 0 10">
+                                                                        <TextBlock Text="р. Таймырский" FontSize="14" Height="33"/>
+                                                                        <Border BorderBrush="#F0F0F0" BorderThickness="0,0,0,1"/>
+                                                                </StackPanel>
+
+                                                                <StackPanel Margin="57 0 0 10">
+                                                                        <TextBlock Text="ЦГБ" FontSize="14" Height="33"/>
+                                                                        <Border BorderBrush="#F0F0F0" BorderThickness="0,0,0,1"/>
+                                                                </StackPanel>
+
+                                                                <StackPanel Margin="57 0 0 10">
+                                                                        <TextBlock Text="р. Комсомольский" FontSize="14" Height="33"/>
+                                                                        <Border BorderBrush="#F0F0F0" BorderThickness="0,0,0,1"/>
+                                                                </StackPanel>
+
+                                                                <StackPanel Margin="57 0 0 10">
+                                                                        <TextBlock Text="р. Маяк" FontSize="14" Height="33"/>
+                                                                        <Border BorderBrush="#F0F0F0" BorderThickness="0,0,0,1"/>
+                                                                </StackPanel>
+
+                                                                <StackPanel Margin="57 0 0 10">
+                                                                        <TextBlock Text="р. Октбрьский" FontSize="14" Height="33"/>
+                                                                        <Border BorderBrush="#F0F0F0" BorderThickness="0,0,0,1"/>
+                                                                </StackPanel>
+
+                                                                <StackPanel Margin="57 0 0 10">
+                                                                        <TextBlock Text="р. Таймырский" FontSize="14" Height="33"/>
+                                                                        <Border BorderBrush="#F0F0F0" BorderThickness="0,0,0,1"/>
+                                                                </StackPanel>
+                                                        </StackPanel>
+
+
+                                                </StackPanel>
+                                                
+                                                
+                                        </StackPanel>
+                                </Border>
+                        </Grid>
+
+                        <!-- КОД ОТ ОТЧЕТА 111111111!!!!!!!!!! -->
+
+                        <Grid Name="Otchet_1" IsVisible="False" Background="#F1F5F9" Width="1560" HorizontalAlignment="Right" > 
+                                <Border CornerRadius="10" Background="White" Width="1550" Height="980" HorizontalAlignment="Right" >
+
+                                        <StackPanel>
+                                                <TextBlock Text="Отчет по процессам" FontWeight="Bold" FontSize="26" Margin="40 20 0 0" />
+
+                                                <StackPanel Orientation="Horizontal">
+
+                                                        <StackPanel Margin="40 20 0 0">
+                                                                <TextBlock Text="Отчетный период:" FontSize="14"/>
+                                                                <CalendarDatePicker Watermark="Выберите дату" FontSize="14"  Width="300" Height="30" CornerRadius="10" BorderBrush="#CED4DA" Foreground="#CED4DA"  />
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 20 0 0">
+                                                                <TextBlock Text="Подразделение:" FontSize="14"/>
+                                                                <ComboBox PlaceholderText="Выберите подразделение" FontSize="14" Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA" >
+                                                                        <ComboBoxItem Content="Подразделение 1" />
+                                                                        <ComboBoxItem Content="Подразделение 2" />
+                                                                        <ComboBoxItem Content="Подразделение 3" />
+                                                                        <ComboBoxItem Content="Подразделение 4" />
+                                                                        <ComboBoxItem Content="Подразделение 5" />
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 20 0 0">
+                                                                <TextBlock Text="Ресурс:" FontSize="14"/>
+                                                                <!-- <StackPanel.Styles>
+                                                                        <Style Selector="CheckBox.h1">
+                                                                                <Setter Property="FontSize" Value="24"/>
+                                                                        </Style>
+                                                                </StackPanel.Styles> -->
+                                                                <ComboBox PlaceholderText="Выберите ресурс" FontSize="14" Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA" >
+                                                                        
+                                                                        <CheckBox Classes="h1" Content="Ресурс 1" Margin="0 0 0 -20"/>
+                                                                        <CheckBox Content="Ресурс 2" Margin="0 0 0 -20"/>
+                                                                        <CheckBox Content="Ресурс 3" Margin="0 0 0 -20"/>
+                                                                        <CheckBox Content="Ресурс 4" Margin="0 0 0 -20"/>
+                                                                        <CheckBox Content="Все ресурсы" Margin="0 0 0 -20"/>
+                                                                        
+                                                                        <!-- <ComboBoxItem Content="Ресурс 1" />
+                                                                        <ComboBoxItem Content="Ресурс 2" />
+                                                                        <ComboBoxItem Content="Ресурс 3" />
+                                                                        <ComboBoxItem Content="Ресурс 4" />
+                                                                        <ComboBoxItem Content="Все ресурсы" /> -->
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 20 0 0">
+                                                                <TextBlock Text="Процесс:" FontSize="14"/>
+                                                                <ComboBox PlaceholderText="Выберите процесс" FontSize="14" Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA" >
+                                                                        <ComboBoxItem Content="Процесс 1" />
+                                                                        <ComboBoxItem Content="Процесс 2" />
+                                                                        <ComboBoxItem Content="Процесс 3" />
+                                                                        <ComboBoxItem Content="Процесс 4" />
+                                                                        <ComboBoxItem Content="Процесс 5" />
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 40 0 0">
+                                                                <Button Content="Применить" Height="30" Foreground="White" FontSize="12" Width="150"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#004C97"/>
+                                                        </StackPanel>
+                                                        
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="Отчет" FontWeight="Bold" Margin="40 20 11 0" FontSize="18" />
+                                                                <Border BorderThickness="0 0 0 1" BorderBrush="#CED4DA" Width="1338" Margin="0 20 0 0" VerticalAlignment="Center" />
+                                                        <TextBlock Text="Дата" FontWeight="Bold" FontSize="18" Margin="11 20 0 0" />
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" Margin="0 15 0 0" >
+                                                        <Border CornerRadius="5 5 0 0" Background="#F1F5F9" Width="1500" Height="70" HorizontalAlignment="Center">
+                                                                <StackPanel Orientation="Horizontal">
+                                                                
+                                                                        <TextBlock Text="Подразделение" VerticalAlignment="Center" Margin="25 0 0 0" FontWeight="Bold" FontSize="16" />
+                                                                        <Grid>
+                                                                                <TextBlock Text="Всего на расход" Margin="910 8 0 0" FontWeight="Bold" FontSize="16"  />
+                                                                                <StackPanel Orientation="Horizontal" Margin="590 40 0 0">
+                                                                                        <TextBlock Text="Факт" FontWeight="Bold" FontSize="16"/>
+                                                                                        <TextBlock Text="План" Margin="179 0 0 0" FontWeight="Bold" FontSize="16"/>
+                                                                                        <TextBlock Text="%плн" Margin="179 0 0 0" FontWeight="Bold" FontSize="16"/>
+                                                                                </StackPanel>
+                                                                        </Grid>
+                                                                        
+                                                                </StackPanel>
+
+                                                        </Border>
+                                                </StackPanel>
+
+                                        </StackPanel>
+                                </Border>
+                        </Grid>   
+
+                        <!-- код отчета 222222 -->
+
+                        <Grid Name="Otchet_2" IsVisible="False" Background="#F1F5F9" Width="1560" HorizontalAlignment="Right" > 
+                                <Border CornerRadius="10" Background="White" Width="1550" Height="980" HorizontalAlignment="Right" >
+
+                                        <StackPanel>
+                                                <TextBlock Text="Отчет по процессам" FontWeight="Bold" FontSize="26" Margin="40 20 0 0" />
+
+                                                <StackPanel Orientation="Horizontal">
+
+                                                        <StackPanel Margin="40 20 0 0">
+                                                                <TextBlock Text="Отчетный период:" FontSize="14"/>
+                                                                <CalendarDatePicker Watermark="Выберите дату" FontSize="14"  Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA"  />
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 20 0 0">
+                                                                <TextBlock Text="Подразделение:" FontSize="14"/>
+                                                                <ComboBox PlaceholderText="Выберите подразделение" FontSize="14" Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA" >
+                                                                        <ComboBoxItem Content="Подразделение 1" />
+                                                                        <ComboBoxItem Content="Подразделение 2" />
+                                                                        <ComboBoxItem Content="Подразделение 3" />
+                                                                        <ComboBoxItem Content="Подразделение 4" />
+                                                                        <ComboBoxItem Content="Подразделение 5" />
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 20 0 0">
+                                                                <TextBlock Text="Ресурс:"  FontSize="14"/>
+                                                                <ComboBox PlaceholderText="Выберите ресурс" FontSize="14" Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA" >
+                                                                        <ComboBoxItem Content="Ресурс 1" />
+                                                                        <ComboBoxItem Content="Ресурс 2" />
+                                                                        <ComboBoxItem Content="Ресурс 3" />
+                                                                        <ComboBoxItem Content="Ресурс 4" />
+                                                                        <ComboBoxItem Content="Все ресурсы" />
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 20 0 0">
+                                                                <TextBlock Text="Процесс:"  FontSize="14"/>
+                                                                <ComboBox PlaceholderText="Выберите контрагента" FontSize="14" Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA" >
+                                                                        <ComboBoxItem Content="Процесс 1" />
+                                                                        <ComboBoxItem Content="Процесс 2" />
+                                                                        <ComboBoxItem Content="Процесс 3" />
+                                                                        <ComboBoxItem Content="Процесс 4" />
+                                                                        <ComboBoxItem Content="Процесс 5" />
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 40 0 0">
+                                                                <Button Content="Применить" Height="30" Foreground="White" FontSize="12" Width="150"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#004C97"/>
+                                                        </StackPanel>
+                                                        
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="Отчет" FontWeight="Bold" Margin="40 20 11 0" FontSize="18" />
+                                                                <Border BorderThickness="0 0 0 1" BorderBrush="#CED4DA" Width="1338" Margin="0 20 0 0" VerticalAlignment="Center" />
+                                                        <TextBlock Text="Дата" FontWeight="Bold" FontSize="18" Margin="11 20 0 0" />
+                                                </StackPanel>
+                                                
+                                                <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" Margin="0 15 0 0" >
+                                                        <Border CornerRadius="5 5 0 0" Background="#F1F5F9" Width="1500" Height="70" HorizontalAlignment="Center">
+                                                                <StackPanel Orientation="Horizontal">
+                                                                
+                                                                        <TextBlock Text="Подразделение" VerticalAlignment="Center" Margin="25 0 0 0" FontWeight="Bold" FontSize="16" />
+                                                                        <Grid>
+                                                                                <TextBlock Text="Всего на расход" Margin="900 8 0 0" FontWeight="Bold" FontSize="16" />
+                                                                                <StackPanel Orientation="Horizontal" Margin="630 43 0 0">
+                                                                                        <TextBlock Text="Факт" FontWeight="Bold" FontSize="16"/>
+                                                                                        <TextBlock Text="План" Margin="79 0 0 0" FontWeight="Bold" FontSize="16"/>
+                                                                                        <TextBlock Text="%плн" Margin="79 0 0 0" FontWeight="Bold" FontSize="16"/>
+                                                                                        <TextBlock Text="Бюджет" Margin="79 0 0 0" FontWeight="Bold" FontSize="16"/>
+                                                                                        <TextBlock Text="%бжд" Margin="79 0 0 0" FontWeight="Bold" FontSize="16"/>
+                                                                                </StackPanel>
+                                                                        </Grid>
+                                                                </StackPanel>
+
+                                                        </Border>
+                                                </StackPanel>
+
+                                        </StackPanel>
+                                </Border>
+                        </Grid>
+
+
+                        <!-- код отчета 3333 -->
+
+                        <Grid Name="Otchet_3" IsVisible="False" Background="#F1F5F9" Width="1560" HorizontalAlignment="Right" > 
+                                <Border CornerRadius="10" Background="White" Width="1550" Height="980" HorizontalAlignment="Right" >
+
+                                        <StackPanel>
+                                                <TextBlock Text="Отчет по процессам" FontWeight="Bold" FontSize="26" Margin="40 20 0 0" />
+
+                                                <StackPanel Orientation="Horizontal">
+
+                                                        <StackPanel Margin="40 20 0 0">
+                                                                <TextBlock Text="Отчетный период:" FontSize="14"/>
+                                                                <CalendarDatePicker Watermark="Выберите дату" FontSize="14"  Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA"  />
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 20 0 0">
+                                                                <TextBlock Text="Подразделение:" FontSize="14"/>
+                                                                <ComboBox PlaceholderText="Выберите подразделение" FontSize="14" Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA" >
+                                                                        <ComboBoxItem Content="Подразделение 1" />
+                                                                        <ComboBoxItem Content="Подразделение 2" />
+                                                                        <ComboBoxItem Content="Подразделение 3" />
+                                                                        <ComboBoxItem Content="Подразделение 4" />
+                                                                        <ComboBoxItem Content="Подразделение 5" />
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 20 0 0">
+                                                                <TextBlock Text="Вид отчета:"  FontSize="14"/>
+                                                                <ComboBox PlaceholderText="Выберите ресурс" FontSize="14" Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA" >
+                                                                        <ComboBoxItem Content="Пояснение СП" />
+                                                                        <ComboBoxItem Content="Сводный отчет" />
+                                                                        <ComboBoxItem Content="Суммарное подразделение"/>
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 20 0 0">
+                                                                <TextBlock Text="Процесс:"  FontSize="14"/>
+                                                                <ComboBox PlaceholderText="Ресурс:" FontSize="14" Width="300" Height="30" CornerRadius="5" BorderBrush="#CED4DA" Foreground="#CED4DA" >
+                                                                        <ComboBoxItem Content="Ресурс 1"/>
+                                                                        <ComboBoxItem Content="Ресурс 2"/>
+                                                                </ComboBox>
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="10 40 0 0">
+                                                                <Button Content="Применить" Height="30" Foreground="White" FontSize="12" Width="150"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#004C97"/>
+                                                        </StackPanel>
+                                                        
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="Отчет" FontWeight="Bold" Margin="40 20 11 0" FontSize="18" />
+                                                                <Border BorderThickness="0 0 0 1" BorderBrush="#CED4DA" Width="1338" Margin="0 20 0 0" VerticalAlignment="Center" />
+                                                        <TextBlock Text="Дата" FontWeight="Bold" FontSize="18" Margin="11 20 0 0" />
+                                                </StackPanel>
+                                                
+                                                <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" Margin="0 15 0 0" >
+                                                        <Border CornerRadius="5 5 0 0" Background="#F1F5F9" Width="1500" Height="70" HorizontalAlignment="Center">
+                                                                <StackPanel Orientation="Horizontal">
+                                                                
+                                                                        <TextBlock Text="Подразделение" VerticalAlignment="Center" Margin="25 0 0 0" FontWeight="Bold" FontSize="16" />
+                                                                        <Grid>
+                                                                                <TextBlock Text="Всего на расход" Margin="900 8 0 0" FontWeight="Bold" FontSize="16" />
+                                                                                <StackPanel Orientation="Horizontal" Margin="630 43 0 0">
+                                                                                        <TextBlock Text="Факт" FontWeight="Bold" FontSize="16"/>
+                                                                                        <TextBlock Text="План" Margin="79 0 0 0" FontWeight="Bold" FontSize="16"/>
+                                                                                        <TextBlock Text="%плн" Margin="79 0 0 0" FontWeight="Bold" FontSize="16"/>
+                                                                                        <TextBlock Text="Бюджет" Margin="79 0 0 0" FontWeight="Bold" FontSize="16"/>
+                                                                                        <TextBlock Text="%бжд" Margin="79 0 0 0" FontWeight="Bold" FontSize="16"/>
+                                                                                </StackPanel>
+                                                                        </Grid>
+                                                                </StackPanel>
+
+                                                        </Border>
+                                                </StackPanel>
+
+                                        </StackPanel>
+                                </Border>
+                        </Grid>
+
+                        <!-- Настройка -->
+                        <Grid Name="Parametr" IsVisible="False" Background="#F1F5F9" Width="1560" HorizontalAlignment="Right" > 
+                                <Border CornerRadius="10" Background="White" Width="1550" Height="980" HorizontalAlignment="Right" >
+                                        <StackPanel>
+                                                <TextBlock Text="Настройка ресурсов СП" Margin="50 20 0 0" FontSize="26" FontWeight="Bold"/>
+
+                                                <StackPanel Orientation="Horizontal">
+                                                        <StackPanel Margin="50 20 0 0">
+                                                                <TextBlock Text="Выберите год"/>
+                                                                <ComboBox Name="YearComboBox" Width="400" Height="30" PlaceholderText="Выберите год" VerticalAlignment="Center" CornerRadius="5"/>
+                                                                        
+                                                        </StackPanel>
+
+                                                        <StackPanel Margin="15 20 0 0">
+                                                                <TextBlock Text="Подразделение"/>
+
+                                                                <ComboBox Width="400" Height="30" VerticalAlignment="Center" PlaceholderText="Выберите подразделение" CornerRadius="5">
+                                                                        <ComboBoxItem Content="Подразделение 1" />
+                                                                        <ComboBoxItem Content="Подразделение 2" />
+                                                                        <ComboBoxItem Content="Подразделение 3" />
+                                                                </ComboBox>
+                                                        </StackPanel>
+                                                </StackPanel>
+
+                                                <TextBlock Text="Корректировка" FontWeight="Bold" FontSize="18" Margin="50 20 0 0">
+                                                        <Border BorderThickness="0 0 0 1" BorderBrush="#CED4DA" Width="1400" Margin="11 0 0 11"  />
+                                                </TextBlock>
+
+                                                <Border Background="#F1F5F9" CornerRadius="5" Width="1500" Height="56" Margin="24 0 0 0" >
+                                                        <TextBlock Text="Наименование ресурса" FontSize="16" Margin="24 18 0 0"/>
+                                                </Border>
+                                                
+
+
+                                                
+                                        </StackPanel>
+
+                                </Border>
+                        </Grid>
+
+
+            
+                </Grid>
+        </StackPanel>        
+        
+        
+</Window>

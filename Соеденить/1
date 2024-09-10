@@ -1,0 +1,146 @@
+
+<!-- <TreeView>
+                                                                        <!-- Корневой элемент TreeViewItem с дочерними элементами -->
+                                                                        <TreeViewItem>
+                                                                                <TreeViewItem.Header>
+                                                                                        <Grid>
+                                                                                                <Grid.ColumnDefinitions>
+                                                                                                        <ColumnDefinition Width="*"/>
+                                                                                                        <ColumnDefinition Width="Auto"/>
+                                                                                                </Grid.ColumnDefinitions>
+                                                                                                <!-- <StackPanel Orientation="Horizontal"> -->
+                                                                                                        <TextBlock Text="Всего ЗФ" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                        <TextBox Width="50" Height="10" VerticalAlignment="Center"/>
+                                                                                                <!-- </StackPanel> -->
+                                                                                        </Grid>
+                                                                                </TreeViewItem.Header>
+
+
+                                                                                <TreeViewItem>
+                                                                                        <TreeViewItem.Header>
+                                                                                                <Grid>
+                                                                                                        <Grid.ColumnDefinitions>
+                                                                                                                <ColumnDefinition Width="4*"/>
+                                                                                                                <ColumnDefinition Width="2*"/>
+                                                                                                                <ColumnDefinition Width="*"/>
+                                                                                                                <ColumnDefinition Width="Auto"/>
+                                                                                                        </Grid.ColumnDefinitions>
+                                                                                                <!-- <StackPanel Orientation="Horizontal"> -->
+                                                                                                        <TextBlock Text="Горнорудные - директория" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                        <TextBox Width="50" Height="10" VerticalAlignment="Center" Grid.Column="1" />
+                                                                                                <!-- </StackPanel> -->
+                                                                                                </Grid>
+
+                                                                                        </TreeViewItem.Header>
+                                                                                        <TreeViewItem>
+                                                                                                <TreeViewItem.Header>
+                                                                                                        <StackPanel Orientation="Horizontal">
+                                                                                                                <TextBlock Text="Горнорудные - группа" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                <TextBox Width="50" Height="10" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                        </StackPanel>
+                                                                                                </TreeViewItem.Header>
+                                                                                        </TreeViewItem>
+                                                                                        <TreeViewItem>
+                                                                                                <TreeViewItem.Header>
+                                                                                                        <StackPanel Orientation="Horizontal">
+                                                                                                                <TextBlock Text="ЦГБ" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                <TextBox Width="50" Height="20" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                        </StackPanel>
+                                                                                                </TreeViewItem.Header>
+                                                                                        </TreeViewItem>
+                                                                                        <TreeViewItem>
+                                                                                                <TreeViewItem.Header>
+                                                                                                        <StackPanel Orientation="Horizontal">
+                                                                                                                <TextBlock Text="р. Комсомольский" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                <TextBox Width="50" Height="10" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                        </StackPanel>
+                                                                                                </TreeViewItem.Header>
+                                                                                        </TreeViewItem>
+                                                                                        <TreeViewItem>
+                                                                                                <TreeViewItem.Header>
+                                                                                                        <StackPanel Orientation="Horizontal">
+                                                                                                                <TextBlock Text="р. Маяк" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                <TextBox Width="50" Height="10" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                        </StackPanel>
+                                                                                                </TreeViewItem.Header>
+                                                                                        </TreeViewItem>
+                                                                                        <TreeViewItem>
+                                                                                                <TreeViewItem.Header>
+                                                                                                        <StackPanel Orientation="Horizontal">
+                                                                                                                <TextBlock Text="р. Октябрьский" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                <TextBox Width="100" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                        </StackPanel>
+                                                                                                </TreeViewItem.Header>
+                                                                                        </TreeViewItem>
+                                                                                        <TreeViewItem>
+                                                                                                <TreeViewItem.Header>
+                                                                                                        <StackPanel Orientation="Horizontal">
+                                                                                                                <TextBlock Text="р. Таймырский" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                <TextBox Width="20" Height="10" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                        </StackPanel>
+                                                                                                </TreeViewItem.Header>
+                                                                                        </TreeViewItem>
+                                                                                        <TreeViewItem>
+                                                                                                <TreeViewItem.Header>
+                                                                                                        <StackPanel Orientation="Horizontal">
+                                                                                                                <TextBlock Text="Горнорудные 2 - директория" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                <TextBox Width="50" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                        </StackPanel>
+                                                                                                </TreeViewItem.Header>
+
+                                                                                                <TreeViewItem>
+                                                                                                        <TreeViewItem.Header>
+                                                                                                                <StackPanel Orientation="Horizontal">
+                                                                                                                        <TextBlock Text="Горнорудные - группа" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                        <TextBox Width="50" Height="10" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                                </StackPanel>
+                                                                                                        </TreeViewItem.Header>
+                                                                                                </TreeViewItem>
+                                                                                                <TreeViewItem>
+                                                                                                        <TreeViewItem.Header>
+                                                                                                                <StackPanel Orientation="Horizontal">
+                                                                                                                        <TextBlock Text="ЦГБ" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                        <TextBox Width="50" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                                </StackPanel>
+                                                                                                        </TreeViewItem.Header>
+                                                                                                </TreeViewItem>
+                                                                                                <TreeViewItem>
+                                                                                                        <TreeViewItem.Header>
+                                                                                                                <StackPanel Orientation="Horizontal">
+                                                                                                                        <TextBlock Text="р. Комсомольский" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                        <TextBox Width="50" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                                </StackPanel>
+                                                                                                        </TreeViewItem.Header>
+                                                                                                </TreeViewItem>
+                                                                                                <TreeViewItem>
+                                                                                                        <TreeViewItem.Header>
+                                                                                                                <StackPanel Orientation="Horizontal">
+                                                                                                                        <TextBlock Text="р. Маяк" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                        <TextBox Width="50" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                                </StackPanel>
+                                                                                                        </TreeViewItem.Header>
+                                                                                                </TreeViewItem>
+                                                                                                <TreeViewItem>
+                                                                                                        <TreeViewItem.Header>
+                                                                                                                <StackPanel Orientation="Horizontal">
+                                                                                                                        <TextBlock Text="р. Октябрьский" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                        <TextBox Width="50" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                                </StackPanel>
+                                                                                                        </TreeViewItem.Header>
+                                                                                                </TreeViewItem>
+                                                                                                <TreeViewItem>
+                                                                                                        <TreeViewItem.Header>
+                                                                                                                <StackPanel Orientation="Horizontal">
+                                                                                                                        <TextBlock Text="р. Таймырский" VerticalAlignment="Center" Margin="0 0 10 0"/>
+                                                                                                                        <TextBox Width="50" VerticalAlignment="Center" Margin="250 0 0 0"/>
+                                                                                                                </StackPanel>
+                                                                                                        </TreeViewItem.Header>
+                                                                                                </TreeViewItem>
+                                                                                        </TreeViewItem>
+
+
+                                                                                </TreeViewItem>  
+
+                                                                        </TreeViewItem>
+                                                                        
+                                                                </TreeView> -->
